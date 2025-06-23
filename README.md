@@ -12,3 +12,5 @@ The Pen Mouse is a compact, portable input device functions similar to a mouse b
 • Li ion battery <br>
 • Arduino Uno 
 ## Getting Started
+## License
+This project is licensed under the MIT License. See LICENSE file for details.
