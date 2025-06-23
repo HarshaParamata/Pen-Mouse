@@ -1,17 +1,100 @@
-# Pen-Mouse
-The Pen Mouse is a compact, portable input device functions similar to a mouse built using a optical sensor to detect movement, and provide left or right clicks functionality through buttons. It was built with affordable components available and user-friendly to handle. It is especially useful for students or designers with limited desk space, ideal for presentations, graphic design applications.
-## Features
-• Move the cursor, performs clicks <br>
-• Pen-like design offers precise control <br>
-• Communicates wirelessly through Bluetooth
-## Components Selection
-• ___ATmega328p-pu microcontroller___: This microcontroller has a 8-bit AVR RISC architecture. It is chosen for its DIP-28 package which simplifies prototyping and assembly. Provides low-power connection, sufficient I/O, Memory and is compatible with Arduino development tools. <br>
-• ___HC-06 4pin Bluetooth module___: Selected to enable wireless connectivity between the pen mouse and host devices. The HC-06 is widely supported, easy to interface with microcontrollers, and operates reliably at 3.3V or 5V logic levels. <br>
-• ___Switching Regulator IC___: A voltage regulator (TPS61023DRLT) ensures stable voltage for sensitive components. <br>
-• ___Li ion battery___: A rechargeable Li-ion battery provides portable power. <br>
-• ___Arduino Uno___: Used in uploading the mouse code logic into the Microcontroller. <br>
-• ___Passive Components___: (Resistors, Capacitors): Essential for signal conditioning, pull-ups, and power stabilization, these were chosen based on standard values for compatibility and availability.
-## Getting Started
-1. ___PCB Design___: We placed the ATMEGA328P at the center with decoupling capacitors near the power pins. We then routed the SPI(Serial Peripheral Interface) lines to the HC-06 Bluetooth module(pins 10-13 on the ATMEGA). Then the voltage regulation circuit was added using the switching regulator IC TPS61023DRLT for a stable 5V output.
-## License
-This project is licensed under the MIT License. See LICENSE file for details.
+# 🖊️ Pen Mouse – A Wireless Pen-Style Mouse using ATmega328P
+
+The **Pen Mouse** is a compact, pen-like input device that functions similarly to a traditional mouse. It uses an optical sensor to detect movement and buttons for left/right click functionality. Built using affordable and widely available components, this device is ideal for students, designers, and users with limited desk space—particularly during presentations or graphic design work.
+
+---
+
+## ✨ Features
+
+- Move the cursor and perform clicks
+- Pen-like ergonomic design for precise control
+- Communicates wirelessly via Bluetooth
+- Rechargeable and portable
+
+---
+
+## 🔩 Components Selection
+
+- **ATmega328P-PU Microcontroller**  
+  8-bit AVR RISC-based MCU with DIP-28 package for easy prototyping. Offers sufficient I/O, memory, and Arduino compatibility.
+
+- **HC-06 Bluetooth Module (4-pin)**  
+  Provides wireless connectivity. Simple UART interface, works with 3.3V or 5V logic.
+
+- **TPS61023DRLT Switching Regulator**  
+  Ensures stable 5V output from a Li-ion battery input, essential for reliable operation.
+
+- **Li-ion Battery**  
+  Rechargeable power source for portable use.
+
+- **Arduino Uno**  
+  Used for uploading firmware to the ATmega328P.
+
+- **Passive Components (Resistors, Capacitors)**  
+  For pull-ups, filtering, and power stabilization.
+
+---
+
+## 🛠️ Getting Started
+
+### ⚙️ PCB Design
+
+- The ATmega328P is placed centrally with decoupling capacitors near its power pins.
+- SPI lines (MOSI, MISO, SCK, SS) are routed to the HC-06 Bluetooth module via pins 10–13 on the ATmega.
+- A voltage regulation circuit using TPS61023DRLT generates a stable 5V from the Li-ion battery.
+
+### 💻 Computer Setup
+
+1. Flash the Pen Mouse firmware (provided in the `firmware/` folder) to ATmega328P using Arduino Uno as ISP.
+2. Pair the HC-06 module to your PC via Bluetooth.
+3. Install the serial-to-mouse emulator software if required.
+4. Start using the Pen Mouse like a regular wireless mouse!
+
+---
+
+## 🖼️ Hardware Snapshots
+
+### 📐 Schematic Diagram  
+![Schematic](./images/schematic.png)
+
+### 🛠️ PCB Layout  
+![PCB](./images/pcb.png)
+
+---
+
+## 📁 Repository Structure
+
+PenMouse/
+├── firmware/ # AVR firmware source code
+├── images/ # Schematic and PCB images
+├── docs/ # Optional documentation files
+└── README.md
+
+
+---
+
+## 🚀 Future Improvements
+
+- Add rechargeable support with USB charging
+- Integrate gesture detection
+- Replace HC-06 with BLE module for lower power and broader compatibility
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See `LICENSE` file for details.
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+
+---
+
+## 🙌 Acknowledgements
+
+- Inspired by DIY input devices and custom hardware projects
+- Built at **IIT Hyderabad** as part of a ESDP Course Project
+
