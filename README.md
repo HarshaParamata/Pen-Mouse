@@ -12,6 +12,6 @@ The Pen Mouse is a compact, portable input device functions similar to a mouse b
 • __Arduino Uno__: Used in uploading the mouse code logic into the Microcontroller. <br>
 • __Passive Components__: (Resistors, Capacitors): Essential for signal conditioning, pull-ups, and power stabilization, these were chosen based on standard values for compatibility and availability.
 ## Getting Started
-1. __PCB Design__: We placed the ATMEGA328P at the center with decoupling capacitors near the power pins. We then routed the SPI(Serial Peripheral Interface) lines to the HC-06 Bluetooth module(pins 10-13 on the ATMEGA). Then the voltage regulation circuit was added using the switching regulator IC TPS61023DRLT for a stable 5V output.
+1. ___PCB Design___: We placed the ATMEGA328P at the center with decoupling capacitors near the power pins. We then routed the SPI(Serial Peripheral Interface) lines to the HC-06 Bluetooth module(pins 10-13 on the ATMEGA). Then the voltage regulation circuit was added using the switching regulator IC TPS61023DRLT for a stable 5V output.
 ## License
 This project is licensed under the MIT License. See LICENSE file for details.
