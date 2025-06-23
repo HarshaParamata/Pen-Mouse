@@ -65,8 +65,10 @@ The **Pen Mouse** is a compact, pen-like input device that functions similarly t
 ![Schematic](./images/schematic.png)
 
 ### 🛠️ PCB Layout  
-![PCB](./images/pcb.png)
+![PCB](./images/pcb_design.png)
 
+### 🛠️ 3D PCB View  
+![3D](./images/3d.png)
 ---
 
 ## 📁 Repository Structure
