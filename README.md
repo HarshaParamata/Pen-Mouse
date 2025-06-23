@@ -47,14 +47,89 @@ The **Pen Mouse** is a compact, pen-like input device that functions similarly t
 1. Use an **Arduino Uno as ISP** to program the ATmega328P.
 2. Follow this official Arduino tutorial for setup and connections:  
    🔗 [How to program ATmega328P using Arduino Uno – Arduino to Breadboard](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoToBreadboard/)
-3. Flash the Pen Mouse firmware (provided in the `firmware/` folder).
+3. Flash the Pen Mouse firmware (provided in the `codes/` folder).
 4. After successful upload, remove the Arduino and power the Pen Mouse from the battery.
 
-### 💻 Computer Setup
+\section*{Pen Mouse: Computer-Side Setup Guide (Windows/Linux/macOS)}
 
-1. Pair the HC-06 module to your PC via Bluetooth.
-2. Install the serial-to-mouse emulator software if required.
-3. Start using the Pen Mouse like a regular wireless mouse!
+This guide explains how to configure your computer to receive Pen Mouse input over Bluetooth and convert it into actual mouse movements using a Python script.
+
+\subsection*{Prerequisites}
+\begin{itemize}
+  \item Python 3.6 or later
+  \item Pip package manager
+  \item HC-06 Bluetooth module paired with your system
+  \item Basic code/text editor (e.g., Notepad++, VS Code, nano)
+\end{itemize}
+
+\subsection*{Step 1: Install Required Python Packages}
+In your terminal or command prompt, run:
+\begin{verbatim}
+pip install pyserial pyautogui
+\end{verbatim}
+
+\subsection*{Step 2: Create and Save the Python Script}
+\begin{enumerate}
+  \item Open any code/text editor.
+  \item Copy the provided Python code for Pen Mouse control (refer to firmware section).
+  \item Save the file as \texttt{pen\_mouse.py}.
+\end{enumerate}
+
+\subsection*{Step 3: Pair HC-06 and Find Serial Port}
+
+\subsubsection*{Windows}
+\begin{itemize}
+  \item Pair HC-06 from \textit{Settings > Devices > Bluetooth}.
+  \item Open \textit{Device Manager > Ports (COM \& LPT)} to find the COM port (e.g., \texttt{COM5}).
+\end{itemize}
+
+\subsubsection*{Linux}
+\begin{verbatim}
+bluetoothctl
+scan on
+pair XX:XX:XX:XX:XX:XX
+trust XX:XX:XX:XX:XX:XX
+connect XX:XX:XX:XX:XX:XX
+ls /dev/rfcomm*
+\end{verbatim}
+
+\subsubsection*{macOS}
+\begin{itemize}
+  \item Pair HC-06 via \textit{System Preferences > Bluetooth}.
+  \item Locate the device in terminal:
+  \begin{verbatim}
+ls /dev/tty.HC-06*
+  \end{verbatim}
+\end{itemize}
+
+\subsection*{Step 4: Run the Script}
+Run the following command in terminal or command prompt:
+\begin{verbatim}
+python pen_mouse.py
+\end{verbatim}
+
+\noindent Once running, your Pen Mouse should control the system cursor via Bluetooth.
+
+\subsection*{Permissions and Troubleshooting}
+
+\subsubsection*{Linux/macOS Serial Port Permissions}
+\begin{verbatim}
+sudo chmod a+rw /dev/rfcomm0          % Linux
+sudo chmod a+rw /dev/tty.HC-06-DevB   % macOS
+\end{verbatim}
+
+\subsubsection*{macOS Accessibility Permissions}
+\begin{itemize}
+  \item Go to \textit{System Preferences > Security \& Privacy > Accessibility}
+  \item Add and allow your terminal or Python environment to control your mouse.
+\end{itemize}
+
+\subsection*{References}
+\begin{itemize}
+  \item \href{https://pyserial.readthedocs.io/}{PySerial Documentation}
+  \item \href{https://pyautogui.readthedocs.io/}{PyAutoGUI Documentation}
+\end{itemize}
+
 
 
 ---
@@ -73,10 +148,13 @@ The **Pen Mouse** is a compact, pen-like input device that functions similarly t
 
 ## 📁 Repository Structure
 
-PenMouse/
-├── firmware/ # AVR firmware source code
+PenMouse/ \\
+├── kicad files/ # Schematic,BOM and PCB file 
 ├── images/ # Schematic and PCB images
-├── docs/ # Optional documentation files
+├── datasheets/ # datasheet of components used
+├── Codes/ # code used for promgraming atmega and computer
+├── Introduction # introduction and first idea of the project
+├── PCB design # pcb design review  
 └── README.md
 
 
