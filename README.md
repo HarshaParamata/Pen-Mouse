@@ -75,7 +75,7 @@ pip install pyserial pyautogui
 ### 💾 Step 2: Create and Save the Python Script
 
 1. Open any code or text editor.
-2. Copy the provided Python code for Pen Mouse control (refer to the firmware section).
+2. Copy the provided Python code for Pen Mouse control (refer to the codes section).
 3. Save the file as `pen_mouse.py`.
 
 ### 🔗 Step 3: Pair HC-06 and Find Serial Port
