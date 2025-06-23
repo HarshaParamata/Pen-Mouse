@@ -69,10 +69,10 @@ This guide explains how to configure your computer to receive Pen Mouse input ov
 
 Open your terminal or command prompt and run:
 
-``bash
+```bash
 
 pip install pyserial pyautogui
-
+```
 ### 💾 Step 2: Create and Save the Python Script
 
 1. Open any code or text editor.
@@ -87,7 +87,7 @@ pip install pyserial pyautogui
 
 #### 🐧 Linux
 
-``bash
+```bash
 
 bluetoothctl
 
@@ -98,9 +98,10 @@ pair XX:XX:XX:XX:XX:XX
 trust XX:XX:XX:XX:XX:XX
 
 connect XX:XX:XX:XX:XX:XX
-
+```
+```
 ls /dev/rfcomm*
-
+```
 #### 🍎 macOS
 - Pair HC-06 via **System Preferences > Bluetooth**.
 - Locate the device in Terminal:
@@ -113,10 +114,10 @@ ls /dev/tty.HC-06*
 
 Run the following command in terminal or command prompt:
 
-``bash
+```bash
 
 python pen_mouse.py
-
+```
 Once running, your Pen Mouse should control the system cursor via Bluetooth.
 
 ---
@@ -125,12 +126,12 @@ Once running, your Pen Mouse should control the system cursor via Bluetooth.
 
 #### 🔒 Linux/macOS Serial Port Permissions
 
-``bash
+```bash
 
 sudo chmod a+rw /dev/rfcomm0          # Linux
 
 sudo chmod a+rw /dev/tty.HC-06-DevB   # macOS
-
+```
 
 #### 🍎 macOS Accessibility Permissions
 
