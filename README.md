@@ -1,5 +1,5 @@
 # Pen-Mouse
-The Pen Mouse is a compact, portable input device functions similar to a mouse built using a optical sensor to detect movement, and provide left or right clicks functionality through buttons.
+The Pen Mouse is a compact, portable input device functions similar to a mouse built using a optical sensor to detect movement, and provide left or right clicks functionality through buttons. It was built with affordable components available and user-friendly to handle. It is especially useful for students or designers with limited desk space, ideal for presentations, graphic design applications.
 ## Features
 • Move the cursor, performs clicks <br>
 • Pen-like design offers precise control <br>
