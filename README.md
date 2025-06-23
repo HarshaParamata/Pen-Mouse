@@ -11,7 +11,7 @@ The Pen Mouse is a compact, portable input device functions similar to a mouse b
 • _Switching Regulator IC_: A voltage regulator (TPS61023DRLT) ensures stable voltage for sensitive components. <br>
 • _Li ion battery_: A rechargeable Li-ion battery provides portable power. <br>
 • _Arduino Uno_: Used in uploading the mouse code logic into the Microcontroller. <br>
-• _Passive Components_: (Resistors, Capacitors): Essential for signal conditioning, pull-ups, and power stabilization, these were chosen based on standard values for compatibility and availability.
+• *Passive Components*: (Resistors, Capacitors): Essential for signal conditioning, pull-ups, and power stabilization, these were chosen based on standard values for compatibility and availability.
 ## Getting Started
 ## License
 This project is licensed under the MIT License. See LICENSE file for details.
