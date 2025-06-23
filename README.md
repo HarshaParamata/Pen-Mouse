@@ -9,9 +9,9 @@ The Pen Mouse is a compact, portable input device functions similar to a mouse b
 <br>
 ## Project Structure
 ## Requirements
-• ATmega328p-pu microcontroller
-• HC-06 4pin Bluetooth module 
-• Switching Regulator IC
-• Li ion battery
+• ATmega328p-pu microcontroller <br>
+• HC-06 4pin Bluetooth module <br>
+• Switching Regulator IC <br>
+• Li ion battery <br>
 • Arduino Uno 
 ## Getting Started
