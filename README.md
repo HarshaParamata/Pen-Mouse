@@ -4,14 +4,14 @@ The Pen Mouse is a compact, portable input device functions similar to a mouse b
 • Move the cursor, performs clicks <br>
 • Pen-like design offers precise control <br>
 • Communicates wirelessly through Bluetooth
-## Project Structure
 ## Components Selection
-• _ATmega328p-pu microcontroller_: This microcontroller has a 8-bit AVR RISC architecture. It is chosen for its DIP-28 package which simplifies prototyping and assembly. Provides low-power connection, sufficient I/O, Memory and is compatible with Arduino development tools. <br>
-• _HC-06 4pin Bluetooth module_: Selected to enable wireless connectivity between the pen mouse and host devices. The HC-06 is widely supported, easy to interface with microcontrollers, and operates reliably at 3.3V or 5V logic levels. <br>
-• _Switching Regulator IC_: A voltage regulator (TPS61023DRLT) ensures stable voltage for sensitive components. <br>
-• _Li ion battery_: A rechargeable Li-ion battery provides portable power. <br>
-• _Arduino Uno_: Used in uploading the mouse code logic into the Microcontroller. <br>
-• _Passive Components_: (Resistors, Capacitors): Essential for signal conditioning, pull-ups, and power stabilization, these were chosen based on standard values for compatibility and availability.
+• __ATmega328p-pu microcontroller__: This microcontroller has a 8-bit AVR RISC architecture. It is chosen for its DIP-28 package which simplifies prototyping and assembly. Provides low-power connection, sufficient I/O, Memory and is compatible with Arduino development tools. <br>
+• __HC-06 4pin Bluetooth module__: Selected to enable wireless connectivity between the pen mouse and host devices. The HC-06 is widely supported, easy to interface with microcontrollers, and operates reliably at 3.3V or 5V logic levels. <br>
+• __Switching Regulator IC__: A voltage regulator (TPS61023DRLT) ensures stable voltage for sensitive components. <br>
+• __Li ion battery__: A rechargeable Li-ion battery provides portable power. <br>
+• __Arduino Uno__: Used in uploading the mouse code logic into the Microcontroller. <br>
+• __Passive Components__: (Resistors, Capacitors): Essential for signal conditioning, pull-ups, and power stabilization, these were chosen based on standard values for compatibility and availability.
 ## Getting Started
+1. __PCB Design__: We placed the ATMEGA328P at the center with decoupling capacitors near the power pins. We then routed the SPI(Serial Peripheral Interface) lines to the HC-06 Bluetooth module(pins 10-13 on the ATMEGA). Then the voltage regulation circuit was added using the switching regulator IC TPS61023DRLT for a stable 5V output.
 ## License
 This project is licensed under the MIT License. See LICENSE file for details.
