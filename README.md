@@ -34,7 +34,6 @@ The **Pen Mouse** is a compact, pen-like input device that functions similarly t
   For pull-ups, filtering, and power stabilization.
 
 ---
-
 ## 🛠️ Getting Started
 
 ### ⚙️ PCB Design
@@ -43,12 +42,20 @@ The **Pen Mouse** is a compact, pen-like input device that functions similarly t
 - SPI lines (MOSI, MISO, SCK, SS) are routed to the HC-06 Bluetooth module via pins 10–13 on the ATmega.
 - A voltage regulation circuit using TPS61023DRLT generates a stable 5V from the Li-ion battery.
 
+### 💻 Uploading Code to ATmega328P
+
+1. Use an **Arduino Uno as ISP** to program the ATmega328P.
+2. Follow this official Arduino tutorial for setup and connections:  
+   🔗 [How to program ATmega328P using Arduino Uno – Arduino to Breadboard](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoToBreadboard/)
+3. Flash the Pen Mouse firmware (provided in the `firmware/` folder).
+4. After successful upload, remove the Arduino and power the Pen Mouse from the battery.
+
 ### 💻 Computer Setup
 
-1. Flash the Pen Mouse firmware (provided in the `firmware/` folder) to ATmega328P using Arduino Uno as ISP.
-2. Pair the HC-06 module to your PC via Bluetooth.
-3. Install the serial-to-mouse emulator software if required.
-4. Start using the Pen Mouse like a regular wireless mouse!
+1. Pair the HC-06 module to your PC via Bluetooth.
+2. Install the serial-to-mouse emulator software if required.
+3. Start using the Pen Mouse like a regular wireless mouse!
+
 
 ---
 
