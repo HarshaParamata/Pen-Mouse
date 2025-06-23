@@ -4,11 +4,6 @@
 	(generator_version "8.0")
 	(uuid "e1b05fc3-4c3d-450a-b99b-ff3aa13d5c39")
 	(paper "A4")
-	(title_block
-		(title "Penmouse with ATmega328p-pu microcontroller")
-		(date "2025-03-09")
-		(company "Vinay kurre")
-	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x04_Socket"
 			(pin_names
@@ -2369,6 +2364,12 @@
 		(uuid "494d35b4-c76b-4e2f-9b64-b52d61b59241")
 	)
 	(junction
+		(at 81.28 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6484572a-b8ad-4ec1-b397-86e2b9e21803")
+	)
+	(junction
 		(at 109.22 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2590,6 +2591,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 102.87) (xy 83.82 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5df0c28f-a4ad-4a2b-b835-c807d78f6616")
+	)
+	(wire
+		(pts
 			(xy 53.34 52.07) (xy 54.61 53.34)
 		)
 		(stroke
@@ -2687,16 +2698,6 @@
 			(type default)
 		)
 		(uuid "db7114d1-870e-4ec7-86d3-df8aac269e28")
-	)
-	(wire
-		(pts
-			(xy 81.28 102.87) (xy 83.82 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df9b30cc-926d-4ac3-9de5-f48fef179ee0")
 	)
 	(wire
 		(pts
@@ -2872,6 +2873,28 @@
 			)
 		)
 	)
+	(global_label "vcc2"
+		(shape input)
+		(at 128.27 129.54 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4e13c96e-01e3-428a-87b2-8744f66af8df")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.27 136.8795 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "vcc1"
 		(shape input)
 		(at 38.1 163.83 180)
@@ -3026,6 +3049,28 @@
 			)
 		)
 	)
+	(global_label "middle"
+		(shape input)
+		(at 135.89 121.92 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b97b477c-88e5-4527-970e-ba665cb4dd64")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 135.89 112.5849 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "rx"
 		(shape input)
 		(at 104.14 156.21 0)
@@ -3039,6 +3084,50 @@
 		(uuid "c10ba968-455e-43c5-9800-c272023852cb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 108.9395 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "vcc2"
+		(shape input)
+		(at 135.89 129.54 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c529f1ac-2e88-4ba9-a1fc-61214fb3f5da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 135.89 136.8795 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Right"
+		(shape input)
+		(at 144.78 121.92 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c6b1ba7a-761c-4f8e-a11a-c1243616edd7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.78 114.0363 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3110,6 +3199,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "vcc2"
+		(shape input)
+		(at 144.78 129.54 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cdaefd11-ac01-4689-b272-056e68d3e545")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.78 136.8795 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3204,6 +3315,28 @@
 	)
 	(global_label "left"
 		(shape input)
+		(at 128.27 121.92 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fda91dae-d69b-42fa-ad5a-ce53dd1a3807")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.27 115.7296 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "left"
+		(shape input)
 		(at 96.52 133.35 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3287,6 +3420,73 @@
 			(project ""
 				(path "/e1b05fc3-4c3d-450a-b99b-ff3aa13d5c39"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 81.28 102.87 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16ffe67f-f401-4696-b7c3-17bfe729e84b")
+		(property "Reference" "#FLG03"
+			(at 79.375 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 77.47 102.8699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 81.28 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f432877-462b-44b6-a3dd-a1a25a6e30b1")
+		)
+		(instances
+			(project ""
+				(path "/e1b05fc3-4c3d-450a-b99b-ff3aa13d5c39"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -3454,7 +3654,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 91.1352 60.96 0)
 			(effects
 				(font
@@ -4046,6 +4246,146 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 135.89 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52dec684-bfe6-4991-ba0c-d1090909a846")
+		(property "Reference" "R7"
+			(at 138.43 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 138.43 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.112 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 135.89 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bad81cd6-cea8-40de-a80a-2d06e7010363")
+		)
+		(pin "2"
+			(uuid "e7cfd553-7c8d-47a9-84d0-4e8915f9a2e7")
+		)
+		(instances
+			(project ""
+				(path "/e1b05fc3-4c3d-450a-b99b-ff3aa13d5c39"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 144.78 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55a32e54-dbd7-4382-acb5-d3536a51d663")
+		(property "Reference" "R8"
+			(at 147.32 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 147.32 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 143.002 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 144.78 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3cf84d74-6a1c-42ff-b0f3-05943b37b2f5")
+		)
+		(pin "2"
+			(uuid "8dd84e48-cb9e-4648-89f2-6c47f73b3be1")
+		)
+		(instances
+			(project ""
+				(path "/e1b05fc3-4c3d-450a-b99b-ff3aa13d5c39"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 35.56 115.57 0)
 		(unit 1)
@@ -4365,7 +4705,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0201_0603Metric"
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 50.8 63.5 0)
 			(effects
 				(font
@@ -4435,7 +4775,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 91.1352 68.58 0)
 			(effects
 				(font
@@ -5301,6 +5641,76 @@
 			(project ""
 				(path "/e1b05fc3-4c3d-450a-b99b-ff3aa13d5c39"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 128.27 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "babc899e-8c9d-4e9a-aa7e-3c85edf1de18")
+		(property "Reference" "R6"
+			(at 130.81 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 130.81 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 126.492 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 128.27 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5fd004fc-d71e-443f-a613-9bc00ed34c62")
+		)
+		(pin "2"
+			(uuid "776fc6a3-d444-4a6e-8451-f9712f6135db")
+		)
+		(instances
+			(project ""
+				(path "/e1b05fc3-4c3d-450a-b99b-ff3aa13d5c39"
+					(reference "R6")
 					(unit 1)
 				)
 			)
