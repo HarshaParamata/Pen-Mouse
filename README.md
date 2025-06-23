@@ -148,13 +148,16 @@ sudo chmod a+rw /dev/tty.HC-06-DevB   # macOS
 
 ## 📁 Repository Structure
 
-PenMouse/ \\
+PenMouse/  
+
 ├── kicad files/ # Schematic,BOM and PCB file 
+
 ├── images/ # Schematic and PCB images
+
 ├── datasheets/ # datasheet of components used
 ├── codes/ # code used for promgraming atmega and computer
 ├── Introduction # introduction and first idea of the project
-├── PCB design # pcb design review  
+├── PCB design # pcb design review
 └── README.md
 
 
