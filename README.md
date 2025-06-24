@@ -189,6 +189,12 @@ PenMouse/
 - Replace HC-06 with BLE module for lower power and broader compatibility
 
 ---
+## Team Members
+ 1. Kurre Vinay - EE23BTECH11036
+ 2. P.Harsha Vardan Kumar - EE23BTECH11214
+ 3. K S Ballavardhan - EE23BTECH11209
+ 4. Kailash C - EE23BTECH11207
+ 5. Manoj Kumar - EE23BTECH11211 
 
 ##  License
 
