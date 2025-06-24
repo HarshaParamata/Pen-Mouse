@@ -48,7 +48,7 @@ The **Pen Mouse** is a compact, pen-like input device that functions similarly t
 1. Use an **Arduino Uno as ISP** to program the ATmega328P.
 2. Follow this official Arduino tutorial for setup and connections:  
     [How to program ATmega328P using Arduino Uno – Arduino to Breadboard](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoToBreadboard/)
-3. Or follow the youtube video tutorials [youtude tutorials](https://youtube.com/playlist?list=PLtuqBdbsL-DvbB6QAGgoGBAEsGuXfGFoF&feature=shared).
+3. Or follow the  [youtude tutorials](https://youtube.com/playlist?list=PLtuqBdbsL-DvbB6QAGgoGBAEsGuXfGFoF&feature=shared).
 4. Flash the Pen Mouse firmware (provided in the `codes/` folder).
 5. After successful upload, remove the Arduino and power the Pen Mouse from the battery.
 ####  PINs VIvew of ATmega 328
