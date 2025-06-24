@@ -51,7 +51,7 @@ The **Pen Mouse** is a compact, pen-like input device that functions similarly t
 3. Flash the Pen Mouse firmware (provided in the `codes/` folder).
 4. After successful upload, remove the Arduino and power the Pen Mouse from the battery.
 ####  PINs VIvew of ATmega 328
-![AtMega](./images/atmega.png)
+![AtMega](./images/atmega.jpg)
 ##  Pen Mouse: Computer-Side Setup Guide (Windows/Linux/macOS)
 
 This guide explains how to configure your computer to receive Pen Mouse input over Bluetooth and convert it into actual mouse movements using a Python script.
