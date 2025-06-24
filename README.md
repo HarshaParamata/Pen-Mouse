@@ -50,7 +50,8 @@ The **Pen Mouse** is a compact, pen-like input device that functions similarly t
     [How to program ATmega328P using Arduino Uno – Arduino to Breadboard](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoToBreadboard/)
 3. Flash the Pen Mouse firmware (provided in the `codes/` folder).
 4. After successful upload, remove the Arduino and power the Pen Mouse from the battery.
-
+####  PINs VIvew of ATmega 328
+![AtMega](./images/atmega.png)
 ##  Pen Mouse: Computer-Side Setup Guide (Windows/Linux/macOS)
 
 This guide explains how to configure your computer to receive Pen Mouse input over Bluetooth and convert it into actual mouse movements using a Python script.
