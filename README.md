@@ -23,7 +23,8 @@ The **Pen Mouse** is a compact, pen-like input device that functions similarly t
 
 - **TPS61023DRLT Switching Regulator**  
   Ensures stable 5V output from a Li-ion battery input, essential for reliable operation.
-
+- **MX8733 Optical Sensor**
+   it will track the movement of mouse send to microcontroller.
 - **Li-ion Battery**  
   Rechargeable power source for portable use.
 
